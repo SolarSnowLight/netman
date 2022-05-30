@@ -1,0 +1,13 @@
+.container-video{
+    height: 100%;
+    width: 58.2%;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-cross-right{
+    margin-left: 95.6%;
+    margin-right: 0;
+}

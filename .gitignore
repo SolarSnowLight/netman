@@ -1,0 +1,11 @@
+
+
+# Attention! Important ways to ignore! Do not delete!
+/main-server/config
+./main-server/config
+
+/messenger-server/config
+./messenger-server/config
+
+/media-server/config
+./media-server/config

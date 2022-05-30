@@ -1,0 +1,178 @@
+.container-login {
+  background-image: url("../../resources/images/bac.png") !important ;
+  background-position: center;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.content {
+  margin-top: 2vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item-login-1 {
+  display: grid;
+}
+
+.auth-logo-img {
+  width: 5%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-logo-text {
+  text-align: center;
+  width: 100%;
+  font-family: Permanent Marker;
+  font-size: 3.5rem;
+  line-height: 100%;
+  background: linear-gradient(90deg, #00eba4, #84009a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.item-login-2 {
+  margin-top: 64px;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auth-txt {
+  color: white !important;
+  font-size: var(--fontSize-header);
+  margin-left: 120px;
+}
+
+.btn-mail-pswrd {
+  color: var(--white);
+  margin-top: 24px;
+  font-size: var(--fontSize-body);
+}
+
+.login-2-input-field {
+  border: 1px solid var(--white);
+  border-radius: 4px !important;
+  background-color: var(--black);
+  height: 43px;
+  width: 360px;
+  text-align: left;
+  font-size: var(--fontSize-body);
+  background-color: #81007f !important;
+}
+
+input[type="email"] {
+  border: 1px solid var(--white);
+  border-radius: 4px !important;
+  background-color: var(--black);
+  height: 43px;
+  width: 360px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--white);
+  -webkit-box-shadow: 0 0 0px 1000px var(--black) inset;
+}
+
+.login-input-field {
+  font-size: var(--fontSize-body);
+  height: 43px;
+  width: 360px !important;
+  border-radius: 4px !important;
+  border: 1px solid var(--white);
+  margin-top: 8px;
+}
+
+.pswrd-btn-input{
+  border: 1px solid var(--white);
+  height: 43px;
+  width: 348px;
+  border-radius: 4px;
+  text-align: left;
+  padding-left: 8px;
+}
+
+.restore-password {
+  margin-top: 3% !important;
+  text-align: right;
+}
+
+.restore-ref {
+  font-size: var(--fontSize-Subtext);
+  color: var(--white);
+}
+
+.btn-auth-std {
+  height: 43px;
+  margin-top: 20%;
+  width: 100%;
+  border: 1px solid var(--primaryPuple);
+  background: var(--primaryPuple);
+  border-radius: 4px;
+  align-content: center;
+  font-size: var(--fontSize-body);
+  font-family: var(--Proxima-Regular);
+}
+
+.btn-auth-std:hover {
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 0px rgba(132, 0, 154, 0.27);
+}
+
+.btn-google {
+  margin-top: 5%;
+  border-radius: 4px !important;
+  background: var(--white);
+  opacity: none !important;
+}
+
+.btn-auth-google {
+  border-radius: 100px !important;
+  margin-left: 9%;
+  font-family: var(--Proxima-Regular) !important;
+  box-shadow: none !important;
+  font-size: var(--fontSize-body) !important;
+  opacity: none !important;
+}
+
+.btn-auth-google span {
+  color: var(--black);
+  text-align: center;
+  opacity: none !important;
+}
+
+.btn-google:hover {
+  cursor: pointer;
+  box-shadow: 0px 6px 6px 0px rgba(255, 255, 255, 0.10);
+}
+
+.login-2-item-2{
+  background-color: #00eba4;
+}
+
+
+
+
+
+
+
+
+
+

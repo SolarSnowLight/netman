@@ -1,0 +1,108 @@
+.container-moderator-creator-info {
+    margin-top: 40px;
+    display: grid;
+    gap: 20px;
+    width: 1115px;
+    height: 1400px;
+    place-items: center;
+    justify-content: center;
+    align-items: start;
+    grid-template-rows: 250px 1000px;
+    grid-gap: 10px;
+    background: #111111;
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 4px 6px rgba(255, 255, 255, 0.13);
+    border-radius: 10px;
+}
+
+.moderator-creator-info-block {
+    height: 250px;
+    width: inherit;
+    border-bottom: 1px solid #A7A7A7;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    grid-gap: 10px;
+    align-items: start;
+    align-content: center;
+    justify-items: center;
+}
+
+.moderator-creator-info-block-item {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+    width: 200px!important;
+    height: 200px!important;
+}
+
+.moderator-creator-info-block-item > div {
+    display: grid;
+}
+
+.moderator-creator-info-block > div > img {
+    width: 159.01px;
+    height: 160px;
+    background: #C4C4C4;
+    border-radius: 10px;
+}
+
+.moderator-creator-info-block-item-gps {
+    display: grid;
+    grid-auto-columns: 40px;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.moderator-creator-info-block-item-gps > *{
+    display: grid;
+}
+
+.moderator-creator-info-block-item-gps > img {
+    width: 18px;
+    height: 27px;
+}
+
+.container-moderator-creator-view-game {
+    margin-top: 40px;
+    display: grid;
+    gap: 20px;
+    width: 1110px;
+    height: 963px;
+    place-items: center;
+    justify-content: center;
+    align-items: start;
+    grid-auto-rows: 60px;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    background: inherit;
+    border: none !important;
+    overflow-y: auto;
+}
+
+.moderator-creator-info-block-item-list-function {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-gap: 10px;
+}
+
+.moderator-creator-info-block-item-list-function > div{
+    display: grid;
+}
+
+.mcib-item-span-nickname {
+    font-family: Permanent Marker;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 58px;
+    color: #FFFFFF;
+}
+
+.moderator-creator-info-block-item:nth-child(2){
+    margin-top: -15px;
+}

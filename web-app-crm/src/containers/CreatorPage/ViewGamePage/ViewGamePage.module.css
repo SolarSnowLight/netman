@@ -1,0 +1,222 @@
+.container-creator-view-game {
+    display: grid;
+    justify-content: center;
+    margin-top: 64px;
+    background: var(--gray-dark);
+    color: var(--white);
+    width: 1110px;
+    place-items: center;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+
+/*
+    align-items: start;
+    grid-auto-rows: 60px;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    overflow-y: auto;;*/
+}
+
+.container-creator-view-game-item{
+    display: grid;
+    width: inherit;
+    height: 60px;
+    background: inherit;
+    align-items: center;
+    place-items: left;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+}
+
+.container-creator-view-game-item > div{
+    display: grid;
+}
+
+.container-creator-view-game-item > div:nth-child(1){
+    width: 50px;
+}
+
+.container-creator-view-game-item > div:nth-child(1){
+    justify-items: right;
+}
+
+.container-creator-view-game-item:nth-child(1) > div > button > img {
+    width: 10px;
+    height: 30px;
+}
+
+.container-creator-view-game-item:nth-child(1) > div > button {
+    width: 10px;
+    height: 30px;
+    border: none;
+    background: inherit;
+}
+
+.container-creator-view-game-item:nth-child(1) > div > button:hover{
+    cursor: pointer;
+}
+
+.container-creator-view-game-item:nth-child(1) > div:nth-child(2),
+.container-creator-view-game-item:nth-child(1) > div:nth-child(5),
+.container-creator-view-game-item:nth-child(1) > div:nth-child(6),
+.container-creator-view-game-item:nth-child(1) > div:nth-child(7) {
+    grid-auto-columns: 20px;
+    grid-auto-flow:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.container-creator-view-game-item:nth-child(1) > div:nth-child(2),
+.container-creator-view-game-item:nth-child(1) > div:nth-child(5),
+.container-creator-view-game-item:nth-child(1) > div:nth-child(6),
+.container-creator-view-game-item:nth-child(1) > div:nth-child(7) > *{
+    display: grid;
+}
+
+.container-creator-view-game-item:nth-child(1) > div:nth-child(7){
+    gap: 10px;
+}
+
+input[type=radio]{
+    color: black!important;
+}
+
+.container-creator-view-game-item-select {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.vgi-header > div:nth-child(1) > button > img {
+    width: inherit !important;
+    height: inherit !important;
+    margin-left: 4px;
+}
+
+.vgi-header > div:nth-child(1) > button {
+    padding: 0px !important;
+    width: 20px !important;
+    height: 20.18px !important;
+    background:inherit;
+    border:none;
+}
+
+.vgi-header > div:nth-child(1) > button:hover{
+    cursor:pointer;
+}
+
+.vgi-header > div:nth-child(2) > span {
+    width: 295px !important;
+    font-weight: bold !important;
+    margin-left: -50px !important;
+}
+
+.vgi-header > div:nth-child(8) > button {
+    width: 112.33px;
+    height: 40px;
+    border: 1px solid #FF0000 !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FF0000 !important;
+    background:inherit;
+}
+
+.vgi-header > div:nth-child(8) > button:hover{
+    background: #FF0000!important;
+    color: black!important;
+    cursor: pointer;
+}
+
+.btn-del{
+    margin-right: 65px;
+}
+
+.vgi-header > div:nth-child(6) > button:hover{
+    cursor: pointer;
+    border: 1px #888 solid;
+}
+
+.vgi-header > div:nth-child(6) > button {
+    width: 120.33px;
+    height: 40px;
+    background: #2D9131;
+    border:#2D9131;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF !important;
+    margin-left: 100px;
+}
+
+.container-creator-view-game-item:nth-child(1) > div:nth-child(2){
+    margin-left: -40px;
+}
+
+.container-creator-view-game-item:nth-child(1) > div:nth-child(5){
+    margin-left: -42px;
+}
+
+.container-creator-view-game-item:nth-child(1) > div:nth-child(6){
+    margin-left: -64px;
+}
+
+.container-creator-view-game-item:nth-child(1) > div:nth-child(7){
+    margin-left: -54px;
+}
+
+::-webkit-scrollbar {
+    background: white;
+    width: 10px;
+    height: 1px;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-button {
+    background-color: #666;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #999;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 10px!important;
+    background-color: #666;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: #999;
+}
+
+.container-creator-view-game-item-btn-menu{
+    background: inherit;
+    width: 50px;
+    margin-left: 50px;
+    border: none;
+}
+
+.container-creator-view-game-item-btn-menu:hover{
+    cursor: pointer;
+}
+
+.container-creator-view-game-item-btn-menu > img{
+    width: 4px;
+    height: 22px;
+}

@@ -1,0 +1,951 @@
+/*.container-moderation-game-page {
+    margin-top: 40px;
+    display: grid;
+    gap: 20px;
+    width: 1100px;
+    min-height: 852px;
+
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    grid-auto-flow: row;
+}
+
+.moderation-game-page-item {
+    display: grid;
+    grid-template-columns: span;
+    grid-gap: 20px;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.moderation-game-page-item-gm {
+    display: grid;
+    width: 1100px;
+    height: 684px;
+}
+
+.moderation-game-page-item-chat-block {
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+.moderation-game-page-item-1 {
+    display: grid;
+    width: 540px;
+    height: 568px;
+}
+
+.moderation-game-page-item-chat-block > button:hover{
+    cursor: pointer;
+}
+
+.moderation-game-page-item-chat-block > .functional-accept-btn {
+    width: 220px;
+    height: 39px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2D9131;
+    border-radius: 100px;
+    border: #2D9131 1px solid;
+}
+
+.moderation-game-page-item-chat-block > .functional-warning-btn {
+    width: 220px;
+    height: 39px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFF500;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    border: 1px solid #FFF500;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
+    background:inherit;
+}
+
+.moderation-game-page-item-chat-block > .functional-ban-btn {
+    width: 220px;
+    height: 39px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FF0000;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    border: 1px solid #FF0000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
+    background: inherit;
+}
+
+.moderation-game-page-item-chat-block-accepted {
+    border: 2px solid #4CAF50;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+.moderation-game-page-item-chat-block-accepted > .functional-accept-btn {
+    width: 410px;
+    height: 39px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2D9131;
+    border-radius: 100px;
+    border: #4CAF50 1px solid;
+}
+
+.moderation-game-page-item-chat-block-warning {
+    border: 2px solid #FFF500;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+.moderation-game-page-item-bans {
+    border: 2px solid #B90707;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+}
+
+.functional-block-enter-ban {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.functional-block-enter-ban > button{
+    background: #B90707;
+    border-radius: 66px;
+    border:  #B90707 1px solid;
+    width: 410px;
+    height: 38px;
+}
+
+.functional-block-enter-ban > button:hover{
+    cursor: pointer;
+}
+
+.functional-block-enter-ban > textarea {
+    border: white 1px solid;
+    border-radius: 4px;
+    width: 410px;
+    height: 50px;
+    text-align: center;
+}
+
+.functional-block-enter-warning {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.functional-block-enter-warning > *{
+    display: grid;
+}
+
+.functional-block-enter-warning > textarea{
+    border: white 1px solid;
+    border-radius: 4px;
+    width: 410px;
+    height: 50px;
+    text-align: center;
+}
+
+.functional-block-enter-warning > button{
+    display: grid;
+    align-content:center;
+    width: 410px;
+    height: 38px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #2D9131;
+    border-radius: 100px;
+    border: #2D9131 1px solid;
+}
+
+.functional-block-banned {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-gap: 20px;
+    grid-auto-flow: row;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.functional-bans-reason {
+    width: 450px;
+    border-radius: 100px;
+    height: 38px;
+    background: yellow;
+    align-content: center;
+    color: black;
+}
+
+.functional-ban-view {
+    width: 450px;
+    border-radius: 100px;
+    height: 38px;
+    background: #B90707;
+    border: #B90707 1px solid;
+    align-content: center;
+    color: black;
+}
+
+.functional-unban-view {
+    width: 450px;
+    border-radius: 100px;
+    height: 38px;
+    background: inherit;
+    border: #B90707 1px solid;
+    align-content: center;
+    color: #B90707;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #B90707;
+}
+
+.functional-unban-view:hover{
+    cursor: pointer;
+}
+
+.functional-block-banned > * {
+    display: grid;
+}
+
+.functional-block-enter-warning > button:hover {
+    cursor: pointer;
+    background: yellow;
+    border: yellow 1px solid;
+    color: black;
+}
+
+.functional-block-chat-warning {
+    display: grid;
+    grid-template-rows: 50px 330px 50px;
+    grid-gap: 20px;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: inherit;
+}
+
+.functional-block-chat-warning > * {
+    display: grid;
+}
+
+.functional-block-chat-warning > * > *{
+    display: grid;
+}
+
+.functional-block-chat-warning > .block-chat{
+    width: inherit;
+    height: 330px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: grid;
+    grid-auto-rows: 100px;
+}
+
+.functional-block-chat-warning > .block-chat::-webkit-scrollbar-track {
+    background-color: inherit;
+}
+
+.functional-block-chat-warning > .block-chat::-webkit-scrollbar-track-piece {
+    background-color: inherit;
+}
+
+.block-chat-message-this {
+    display: grid;
+    height: auto;
+    max-height: 70px;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    justify-content: right;
+    place-items: right;
+    align-items: flex-start;
+    justify-items: right;
+}
+
+.block-chat-message-this > *{
+    display: grid;
+    word-break: break-all;
+    text-align: right;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.block-chat-message-other {
+    display: grid;
+    height: auto;
+    max-height: 100px;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    justify-content: left;
+    place-items: left;
+    align-items: flex-start;
+    justify-items: left;
+}
+
+.block-chat-message-other > *{
+    display: grid;
+    word-break: break-all;
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.message-nickname-this {
+    background: inherit;
+    border: silver 2px solid;
+    border-radius: 4px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.message-text-other {
+    margin-right: 20px;
+}
+
+.block-send-message {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.message-text-this{
+    margin-left: 20px;
+}
+
+.message-sender{
+    margin-left: 15px;
+}
+
+.table-accepted, .table-accepted > img {
+    padding: 0px;
+    margin: 0px;
+    width: 27px;
+    height: 33px;
+    background: inherit;
+    border: none;
+}
+
+.table-accepted:hover{
+    cursor: pointer;
+}
+
+.message-sender {
+    width: 410px;
+    height: 33px;
+    background: #C4C4C4;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+}
+
+.block-text-warning{
+    width: 460px!important;
+}
+
+.message-sender > input {
+    height: 30px;
+    border-right: black 1px solid;
+    border-end-start-radius: 25px;
+    border-start-start-radius: 25px;
+    color: black;
+}
+
+.message-sender{
+    display: grid;
+    grid-template-columns: 12fr 1fr;
+}
+
+.message-sender > img{
+    height: inherit;
+}
+
+.message-sender > img:hover{
+    cursor: pointer;
+}
+
+.message-sender > *{
+    display: grid;
+}
+
+.block-text-warning {
+    display: grid;
+    align-content: center;
+    width: 410px;
+    height: 38px;
+    background: #FFF500;
+    border: 1px solid #FFF500;
+    box-sizing: border-box;
+    border-radius: 66px;
+    overflow: auto;
+    color: black;
+}
+
+.block-text-warning::-webkit-scrollbar {
+    background: white;
+    width: 10px;
+    height: 5px;
+    border-radius: 4px;
+}
+
+.block-text-warning::-webkit-scrollbar-button {
+    background-color: inherit;
+    border-radius: 4px;
+    width: 0px;
+    height: 0px;
+}
+
+.block-text-warning::-webkit-scrollbar-track {
+    background-color: #999;
+    border-radius: 5px;
+}
+
+.block-text-warning::-webkit-scrollbar-track-piece {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.block-text-warning::-webkit-scrollbar-thumb {
+    height: 20px !important;
+    background-color: #666;
+    border-radius: 4px;
+}
+
+.block-text-warning::-webkit-scrollbar-corner {
+    background-color: #999;
+}
+
+.moderation-game-page-item-1-gm {
+    box-shadow: inset 0px 5px 4px rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(9px) !important;
+    border-radius: 7px !important;
+    width: inherit;
+    height: inherit;
+}
+
+.item-1-quest-block img {
+    width: 27px;
+    height: 27px;
+}
+
+.moderation-game-page-item-1-quest-block {
+    width: inherit;
+    height: 476px;
+    background: linear-gradient(137.44deg, #000000 -66.31%, #161515 120.94%);
+    border: 1px solid #FAFAFA;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 50px 22px 22px 200px 50px;
+    grid-gap: 10px;
+    place-items: left !important;
+    justify-content: left !important;
+    justify-items: left !important;
+    gap: 30px;
+}
+
+.item-1-quest-block {
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: grid;
+    width: inherit;
+    justify-items: left !important;
+}
+
+.item-1-quest-block:nth-child(1) {
+    margin-top: 20px;
+    height: 50px;
+}
+
+.item-1-quest-block:nth-child(1) > input{
+    width: 480px;
+}
+
+.item-1-quest-block:nth-child(2) {
+    width: inherit;
+    height: 40px;
+    grid-template-columns: 30px 100px;
+    place-items: left !important;
+    justify-content: left !important;
+    justify-items: left !important;
+}
+
+.item-1-quest-block:nth-child(2) > input{
+    box-sizing: border-box;
+    width: 460px;
+}
+
+.item-1-quest-block:nth-child(2) > *{
+    display: grid;
+}
+
+.item-1-quest-block:nth-child(3) {
+    width: inherit;
+    height: 40px;
+    grid-template-columns: 30px 100px;
+    place-items: left !important;
+    justify-content: left !important;
+    justify-items: left !important;
+}
+
+.item-1-quest-block:nth-child(3) > input{
+    box-sizing: border-box;
+    width: 460px;
+}
+
+.item-1-quest-block:nth-child(3) > *{
+    display: grid;
+}
+
+.item-1-quest-block:nth-child(4) {
+    height: 200px;
+}
+
+.item-1-quest-block:nth-child(4) > textarea{
+    box-sizing:border-box;
+    height: inherit;
+    width: 492px;
+}
+
+.item-1-quest-block:nth-child(5){
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center !important;
+    justify-content: center !important;
+    justify-items: center !important;
+}
+
+.item-1-quest-block:nth-child(5){
+    padding: 0px;
+}
+
+.item-1-quest-block:nth-child(5) > *{
+    display: grid;
+}
+
+.item-1-quest-block:nth-child(5) > input{
+    width: 492px;
+    background: yellow!important;
+}
+
+textarea {
+    resize: none;
+    background: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: white !important;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #626262 !important;
+}
+
+output {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    background: inherit;
+}
+
+
+
+.moderation-game-page-item-1-buttons-block {
+    margin-top: 52px;
+    display: grid;
+    grid-template-rows: none !important;
+    grid-template-columns: repeat(2, 112.33px);
+    align-items: center;
+    justify-content: center;
+    gap: 320px;
+}
+
+.moderation-game-page-item-1-buttons-block > button{
+    display: grid;
+    align-content:center;
+    width: 112.33px;
+    height: 40px;
+}
+
+.moderation-game-page-item-1-buttons-block > button:nth-child(1){
+    border: 1px solid #FF0000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 100px;
+    background: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #FF0000;
+}
+
+.moderation-game-page-item-1-buttons-block > button:nth-child(1):hover{
+    cursor: pointer;
+}
+
+.moderation-game-page-item-1-buttons-block > button:nth-child(2){
+    background: #2D9131;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: 1px #2D9131 solid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.moderation-game-page-item-1-buttons-block > button:nth-child(2):hover{
+    cursor: pointer;
+}
+
+
+
+.moderation-game-page-item:nth-child(2){
+    margin-top: 80px;
+    grid-template-rows: 30px 380px;
+    background: inherit;
+    height: 500px;
+    width: 100%;
+    justify-content:center;
+}
+
+.moderation-game-page-item-2 {
+    display: grid;
+    box-sizing: border-box;
+    width: 1100px;
+}
+
+.moderation-game-page-item-2:nth-child(1) > input {
+    height: 30px;
+}
+
+.moderation-game-page-item-2:nth-child(2){
+    width: 100%;
+    height: 400px;
+    grid-template-columns: 50% 50%;
+    justify-content: left;
+    background: inherit;
+}
+
+.moderation-game-page-item-3 {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-flow: row;
+    background: inherit;
+}
+
+.moderation-game-page-item-3-element {
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 100px 300px;
+    grid-gap: 80px;
+    background: inherit;
+}
+
+.moderation-game-page-item-3-element > div{
+    display:grid;
+}
+
+.moderation-game-page-item-3-element-select {
+    width: 230px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+input[type="datetime-local"]{
+    width: 230px;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
+span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.white-bottom-border {
+    border: none!important;
+    border-bottom: 1px solid #FFFFFF!important;
+    width: 230px;
+}
+
+
+.moderation-game-page-item:nth-child(3) > button {
+    background: #81007F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: 1px #2D9131 solid;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 137px;
+    height: 40px;
+}
+
+.moderation-game-page-item:nth-child(3) > button:hover{
+    cursor: pointer;
+}
+
+.moderation-game-page-item:nth-child(4) {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 20px;
+    grid-auto-flow: dense;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.moderation-game-page-item-1-quest-created {
+    width: inherit;
+    height: 476px;
+    background: linear-gradient(137.44deg, #000000 -66.31%, #161515 120.94%);
+    border: 1px solid #FAFAFA;
+    box-sizing: border-box;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 50px 22px 22px 200px 50px;
+    grid-gap: 10px;
+    place-items: left !important;
+    justify-content: left !important;
+    justify-items: left !important;
+    gap: 30px;
+}
+
+.item-1-quest-created img {
+    width: 27px;
+    height: 27px;
+}
+
+.item-1-quest-created {
+    text-align: left;
+    padding-left: 20px;
+    box-sizing: border-box;
+    display: grid;
+    width: inherit;
+    justify-items: left !important;
+}
+
+.item-1-quest-created:nth-child(1) {
+    margin-top: 20px;
+    height: 50px;
+    display:grid;
+    grid-template-columns: 400px 30px 50px;
+    gap: 10px;
+}
+
+.item-1-quest-created:nth-child(1) > input{
+    width: 300px;
+}
+
+.item-1-quest-created:nth-child(2) {
+    width: inherit;
+    height: 40px;
+    grid-template-columns: 30px 100px;
+    place-items: left !important;
+    justify-content: left !important;
+    justify-items: left !important;
+}
+
+.item-1-quest-created:nth-child(2) > input{
+    box-sizing: border-box;
+    width: 460px;
+}
+
+.item-1-quest-created:nth-child(2) > *{
+    display: grid;
+}
+
+.item-1-quest-created:nth-child(3) {
+    width: inherit;
+    height: 40px;
+    grid-template-columns: 30px 100px;
+    place-items: left !important;
+    justify-content: left !important;
+    justify-items: left !important;
+}
+
+.item-1-quest-created:nth-child(3) > input{
+    box-sizing: border-box;
+    width: 460px;
+}
+
+.item-1-quest-created:nth-child(3) > *{
+    display: grid;
+}
+
+.item-1-quest-created:nth-child(4) {
+    height: 200px;
+}
+
+.item-1-quest-created:nth-child(4) > textarea{
+    box-sizing:border-box;
+    height: inherit;
+    width: 492px;
+}
+
+.item-1-quest-created:nth-child(5){
+    grid-template-rows: repeat(1, 1fr);
+    place-items: center !important;
+    justify-content: center !important;
+    justify-items: center !important;
+}
+
+.item-1-quest-created:nth-child(5){
+    padding: 0px;
+}
+
+.item-1-quest-created:nth-child(5) > *{
+    display: grid;
+}
+
+.item-1-quest-created:nth-child(5) > input{
+    width: 492px;
+    background: yellow!important;
+}
+
+.moderation-game-page-btn-edit{
+    background: inherit;
+    border: none;
+}
+
+.moderation-game-page-btn-edit:hover{
+    cursor:pointer;
+}
+
+.moderation-game-page-btn-edit > img {
+    width: 22px;
+    height: 22px;
+}
+
+.moderation-game-page-btn-delete > img {
+    width: 22px;
+    height: 22px;
+}
+
+.moderation-game-page-btn-delete {
+    background: inherit;
+    border: none;
+}
+
+.moderation-game-page-btn-delete:hover{
+    cursor:pointer;
+}*/

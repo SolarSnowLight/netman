@@ -1,0 +1,214 @@
+:root {
+  /*colors*/
+  --black: #111111;
+  --white: #ffffff;
+  --primaryPuple: #84009a;
+  --green: #00eba4;
+  --yellow: #fff500;
+  --red: #f3385a;
+
+  --gray-dark: #1b1b1b;
+  --gray: #9b9b9b;
+  --gray-light: #b7b7b7;
+  --gray-background: #f8f8f8;
+
+  /*Indents*/
+  --indent-xl: 56px;
+  --indent-l: 32px;
+  --indent-m: 24px;
+  --indent-s: 16px;
+  --indent-xs: 8px;
+
+  /*Size*/
+  --fontSize-xl: 40px;
+  --fontSize-l: 36px;
+  --fontSize-header: 24px;
+  --fontSize-body: 16px;
+  --fontSize-Subtext: 14px;
+
+  /*Radious*/
+  --borderRadius-block: 16px;
+  --borderRadius-button: 30px;
+
+  /*Shadow*/
+  --blockShadow: 0px 4px 9px rgba(65, 65, 65, 0.25);
+
+  /*Theme*/
+  --theme-dark-bg: var(--black);
+  --theme-light-bg: var(--gray-background);
+
+  /*Fonts*/
+  --font-family-label: Permanent Marker;
+  --font-family-body: Proxima-Regular;
+  --font-family-small: Proxima-Regular;
+  --font-family-active: Proxima-Bold;
+}
+
+/*FONTS*/
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url("../resources/fonts/PermanentMarker-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima-Bold";
+  src: url("../resources/fonts/ProximaSoft-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima-Regular";
+  src: url("../resources/fonts/ProximaSoft-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Proxima-Light";
+  src: url("../resources/fonts/ProximaSoft-Light.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #111111;
+  font-family: Proxima-Regular !important;
+}
+
+.content {
+  width: 944px;
+  display: grid;
+  justify-content: center;
+}
+
+.container-blur {
+  transition: 0.5s;
+  filter: blur(4px);
+  opacity: 0.1;
+}
+
+.container-hidden {
+  display: none;
+}
+
+.a:-webkit-any-link {
+  text-decoration: none !important;
+}
+
+/*BUTTONS*/
+
+.button-green {
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid var(--green);
+  border-radius: 100px;
+  font-family: var(--font-family-body);
+  font-size: var(--fontSize-body);
+  background-color: inherit;
+  color: var(--green);
+  box-sizing: border-box;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.button-gray {
+  height: 40px;
+  padding: 8px 16px;
+  border: 1px solid var(--gray);
+  border-radius: 100px;
+  font-family: var(--font-family-body);
+  font-size: var(--fontSize-body);
+  background-color: inherit;
+  color: var(--gray);
+
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+.button-cross:hover {
+  cursor: pointer;
+  transition: 1s;
+}
+
+/*FIELDS*/
+
+input {
+  font-family: Proxima-Regular !important;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+input[type=datetime-local],
+input[type=text-field] {
+  border: 1px solid var(--white) !important;
+  width: 304px !important;
+  height: 32px;
+  border-radius: 4px;
+  font-size: var(--fontSize-Subtext);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+input[type=datetime-local] {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+input[type=text-card] {
+  height: 42px !important;
+  font-size: var(--fontSize-Subtext);
+  background-color: inherit;
+  border: none !important;
+  outline: none;
+  color: var(--white);
+  min-width: 404px;
+  box-shadow: inset 0 0 0 0 transparent !important;
+}
+
+input[type="checkbox"] {
+  transform: scale(2);
+  opacity: 0.9;
+}
+
+/*SELECT*/
+
+.select {
+  width: 304px;
+  font-size: var(--fontSize-Subtext);
+}
+
+/*OUTPUT*/
+
+output {
+  font-size: var(--font-family-body);
+  color: var(--gray);
+  margin-right: 24px;
+}
+
+/*TEXTAREA*/
+
+textarea {
+  resize: none;
+  background: inherit;
+  font-size: var(--fontSize-body);
+  font-family: var(--font-family-body);
+  color: white !important;
+  border: 1px solid var(--white);
+  width: 304px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+textarea[type="textarea-card"] {
+  border: none;
+  width: inherit;
+  outline: none;
+}

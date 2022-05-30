@@ -1,0 +1,72 @@
+.container-video-table{
+    display: grid;
+    width: 944px;
+    z-index: 1;
+    position: fixed;
+    margin-left: 20%;
+    color: var(--white);
+}
+
+.container-video-table-header{
+    width: 100%;
+    height: inherit;
+    display: grid;
+    grid-auto-columns: 95% 5%;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.cvth-item-1{
+    font-size: var(--fontSize-header);
+    display: grid;
+}
+
+.button-cross:hover{
+    cursor: pointer;
+    transition: 1s;
+}
+
+.cvt-table{
+    background-color: var(--black);
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.cvt-table-header{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    margin-left: 242px;
+}
+
+.cvt-table-item{
+    display: grid;
+}
+
+.cvt-table-content{
+/*Таблица*/ 
+}
+
+.cvt-table-content-row{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: column;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.cvttcri-img-video{
+    width: 100%!important;
+    height: 100%!important;
+    clip-path: circle(30% at 50% 45%);
+}
+
+.cvttcri-img-video:hover{
+    cursor: pointer;
+}
